@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whitelist</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header-wrapper">
+        <h1>Tasteless</h1>
+        <img src="/icons/icon128.png" width="20" alt="" />
+      </div>
+      <p>
+        Add the domains you want to exclude from beeing tracked by umami (sets umami.disabled to
+        true in local storage)
+      </p>
+      <ul id="whitelist"></ul>
+      <div class="input-wrapper">
+        <input type="text" id="domain" placeholder="Add domain" />
+        <button id="add">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M5 12l14 0" />
+          </svg>
+        </button>
+      </div>
+      <!-- <button id="to-ext" target="_blank">Zur Erweiterung</button> -->
+    </div>
+  </body>
+</html>

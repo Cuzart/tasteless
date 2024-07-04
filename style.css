@@ -1,0 +1,91 @@
+.content {
+  width: 280px;
+  padding: 16px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0px;
+  font-weight: 700;
+}
+
+ul {
+  margin-top: 16px;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+li {
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  font-weight: 500;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 6px 5px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+input {
+  flex-grow: 1;
+  border: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+button:not(.btn-delete) {
+  font: inherit;
+  background-color: #7950f2;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  transition: 0.15s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6132ee;
+  }
+  &:active {
+    scale: 0.95;
+  }
+}
+
+.btn-delete {
+  background-image: url('data:image/svg+xml;charset=UTF-8, <svg  xmlns="http://www.w3.org/2000/svg"  width="14"  height="14"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="3"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #b8b8b8;
+  color: white;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.15s ease;
+
+  &:hover {
+    background-color: #d32f2f;
+  }
+  &:active {
+    scale: 0.95;
+  }
+}
