@@ -3,7 +3,9 @@
   "name": "Tasteless Umami",
   "version": "1.0",
   "description": "Remove yourself from umami analytics tracking by setting an entry in your local storage.",
-  "permissions": ["storage", "activeTab", "scripting"],
+
+  "optional_permissions": ["activeTab", "scripting", "storage", "tabs"],
+
   "background": {
     "service_worker": "background.js"
   },
